@@ -9,3 +9,7 @@ productos.each { |producto, valor| puts "#{producto} = $#{valor}" }
 productos['bebida'] = 2000
 
 productos.each { |producto, valor| puts "#{producto} = $#{valor}" }
+
+array = productos.to_a
+
+puts array	
