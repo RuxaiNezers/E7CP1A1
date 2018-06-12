@@ -5,3 +5,7 @@ productos.each { |producto, valor| puts "#{producto} = $#{valor}" }
 productos['cereal'] = 2200
 
 productos.each { |producto, valor| puts "#{producto} = $#{valor}" }
+
+productos['bebida'] = 2000
+
+productos.each { |producto, valor| puts "#{producto} = $#{valor}" }
