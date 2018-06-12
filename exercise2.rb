@@ -12,4 +12,8 @@ productos.each { |producto, valor| puts "#{producto} = $#{valor}" }
 
 array = productos.to_a
 
-puts array	
+puts array
+
+productos.delete('galletas')
+
+productos.each { |producto, valor| puts "#{producto} = $#{valor}" }
