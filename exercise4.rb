@@ -3,4 +3,8 @@ edades = [32, 28, 41, 19]
 
 h = Hash[personas.zip(edades)]
 
-puts h["Carolina"]
+def metEdad(hash1)
+	puts hash1 
+end
+
+metEdad(h["Carolina"])
