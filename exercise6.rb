@@ -26,11 +26,21 @@ def valor(hash,valor)
 end
 
 def masIVA(hash)
-	
 	hash.each do |keys, values|	
-		hash[keys] = values+1.19
+		hash[keys] = values*1.19
 	end
 	
+	puts hash
+end
+
+def descuento(hash)
+
+	hash.each do |keys,values|
+		if hash.key(values).include?(" ")
+			hash[keys]= values.to_f*0.8
+		end
+	end
+
 	puts hash
 end
 
@@ -42,3 +52,4 @@ end
  keys(restaurant_menu,soloKeys)
  valor(restaurant_menu,soloValor)
  masIVA(restaurant_menu)
+ descuento(restaurant_menu)
