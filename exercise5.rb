@@ -3,4 +3,6 @@ ventas = [2000, 3000, 1000, 5000, 4000]
 
 h = Hash[meses.zip(ventas)]
 
-puts h
+invert = h.invert
+
+puts invert[invert.keys.max]
