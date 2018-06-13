@@ -3,8 +3,8 @@ edades = [32, 28, 41, 19]
 
 h = Hash[personas.zip(edades)]
 
-def metEdad(hash1)
-	puts hash1 
+def imprimir(hash)
+	hash.each {|key, value| puts "#{key} = #{value}"}
 end
 
-metEdad(h["Carolina"])
+imprimir(h)
